@@ -1,0 +1,1381 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kalnia:wght@100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    color: inherit;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+}
+    
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 430px;
+    min-height: 100vh;
+    background-color: #f6f6f6;
+    position: relative;
+    overflow-x: hidden;
+}
+
+header{
+    width:100%;
+    padding: 8px 45px;
+    background-color: #eae9e9;
+    display: flex;
+    justify-content: center;
+}
+
+nav{
+    width: 340px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-family: "Kalnia", serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #424244;
+}
+
+.nav-links{
+    display: none;
+}
+
+#menu{
+    width: 32px;
+    height: 32px;
+    filter: brightness(0.2);
+    cursor: pointer;
+}
+
+main{
+    width: 430px;
+    display: flex;
+    flex-direction: column;
+    padding: 24px 0 24px ;
+}
+
+.services{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    overflow-x: scroll;
+    padding: 0 0 0 45px;
+}
+
+.serviceBtn{
+    width: fit-content;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    color: #424244;
+    background-color: #f6f6f6;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.serviceBtnClicked{
+    background-color: #ff6700;
+    color: #fff;
+    font-weight: 500;
+}
+
+.services::-webkit-scrollbar {
+    display: none; 
+}
+
+.search-section{
+    display: flex;
+    flex-direction: column;
+    padding: 0 45px ;
+    gap: 24px;
+    margin-top: 24px;
+}
+
+.ticket-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.commonDisplay{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.commonDisplay h4{
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    color: #424244;
+    white-space: nowrap;
+}
+
+.commonDisplay img{
+    width: 32px;
+    height: 32px;
+}
+
+.ticket-dir{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.direct-common{
+    width: 340px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px 20px;
+    border-radius: 12px;
+    border: solid 2px #ff6700;
+    background-color: #fff;
+}
+
+.directFrom,
+.directTo,
+.directDate{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.direct-common span{
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: 0.8px;
+    color: rgba(37, 37, 37, 0.8);
+}
+
+.direct-common h5{
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    color: #424244;
+}
+
+.directFrom img,
+.directTo img,
+.directDate img{
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.plus-icon{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+#searchBtn{
+    width: 340px;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 12px;
+    background-color: #ff6700;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+}
+
+.filter-offer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 24px;
+    margin: 24px 0;
+}
+
+.chosenDir{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 12px 45px;
+    background-color: #fff6f0;
+}
+
+.chosenDir img{
+    width: 16.6px;
+    height: 16.6px;
+    cursor: pointer;
+}
+
+.chosenInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+#direction{
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #424244;
+}
+
+.date-person{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+#dirDate, #dirPerson{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #424244;
+}
+
+.filterBtn{
+    width: 340px;
+    margin:0 45px;
+    padding: 12px 40px;
+    border-radius: 12px;
+    border: none;
+    background-color: #ff6700;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+}
+
+.ticket-container{
+    display: flex;
+    flex-direction: column;
+    padding: 0 45px;
+    gap: 24px;
+}
+
+.ticket-card{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px 16.5px;
+}
+
+.ticketMain{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.fly-company{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.fly-company img{
+    width: 24px;
+    height: 24px;
+}
+
+.fly-company span{
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: center;
+    color: #424244;
+}
+
+.fly-container{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+.fly-time{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.fly-landing{
+    display: flex;
+    flex-direction: row;
+    gap: 47px;
+}
+
+.fly-hour{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.landingCommon{
+    font-size: 18px;
+    font-weight: normal;
+    color: #424244;
+    white-space: nowrap;
+}
+
+.hourStart, .hourEnd{
+    font-size: 16px;
+    font-weight: 500;
+    color: #424244;
+}
+
+.lineStyle{
+    display: block;
+    position: relative;
+}
+
+.line-hour{
+    width: 80px;
+    height: 2px;
+    border: none;
+    background-color: #c85100;
+}
+
+.square{
+    width: 8px;
+    height: 8px;
+    border: solid 1px #424244;
+    background-color: #dbdbdb;
+    position: absolute;
+    top: -3px;
+    left: 36px;
+    z-index: 2;
+}
+
+.full-end{
+    display: flex;
+    align-items: flex-end;
+}
+
+.full-time{
+    font-size: 16px;
+    font-weight: normal;
+    text-align: end;
+    color: rgba(66, 66, 68, 0.6);
+    white-space: nowrap;
+    padding-bottom: 5px;
+}
+
+.price{
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+    color: #424244;
+}
+
+.dealBtn{
+    width: 307px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ff8c3e;
+    font-size: 20px;
+    font-weight: 500;
+    color: #424244;
+    cursor: pointer;
+}
+
+.price-deal{
+    display: none;
+}
+
+#moreResult{
+    width: 340px;
+    margin: 0 45px;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ff6700;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+
+.filter-section{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 484px;
+}
+
+.filter-container{
+    display: block;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+#backArrow{
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    position: absolute;
+    top: 6px;
+    left: 57px;
+    z-index: 4;
+}
+
+.search-parts{
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 45px;
+    padding: 20px 24px;
+    border-radius: 12px;
+    background-color: #fff;
+}
+
+.search-line{
+    width: 129px;
+    height: 2px;;
+    background-color: #ff6700;
+    border: none;
+    margin: 18px 0 20px;
+}
+
+.search-parts p{
+    font-size: 24px;
+    font-weight: normal;
+    color: #424244;
+}
+
+.search-items{
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    gap: 24px;
+    margin: 24px 45px 0;
+    padding: 20px 24px;
+    border-radius: 12px;
+    background-color: #fff;
+}
+
+.stop-wrapper, 
+.times-wrapper,
+.duration-wrapper,
+.price-wrapper,
+.calculator-wrapper,
+.methods-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.stop-container , 
+.time-container,
+.airlines-container,
+.airports-container,
+.duration-container,
+.price-container,
+.calculator-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.payment-method,
+.bags-container,
+.checked-bags{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.stop-container span,
+.time-container span,
+.airlines-container span,
+.airports-container span,
+.duration-container span,
+.price-container span,
+.calculator-container span{
+    font-size: 24px;
+    font-weight: normal;
+    color: #424244;
+}
+
+.calculator-container span{
+    font-size: 28px;
+}
+
+#stopArrow,
+#timeArrow,
+#airlinesArrow,
+#airportsArrow,
+#durationArrow,
+#priceArrow{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.check-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.check-common{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.check-common input{
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    border: solid 1px #424244;
+    background-color: #fff;
+  
+}
+
+.check-common label,
+.takeoff span{
+    font-size: 24px;
+    font-weight: normal;
+    color: #424244;
+}
+
+.takeoff-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.takeoff,
+.duration-line,
+.prices,
+.creditCard-container,
+.handbag-container,
+.suitcase-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.takeoff-time,
+.duration,
+.price-amount{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.takeoff-time span{
+    font-size: 20px;
+    font-weight: normal;
+    color: #424244;
+}
+
+.payment-method span,
+.bags-container span,
+.checked-bags span{
+    font-size: 20px;
+    font-weight: normal;
+    color: #424244;
+}
+
+.line-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    height: 30px;
+}
+
+.lines{
+    width: 295.5px;
+    height: 2px;
+    background-color: #c85100;
+}
+
+.circle-right{
+    width: 29.8px;
+    height: 30px;
+    border-radius: 50%;
+    border: solid 2px #c85100;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.circle-left{
+    width: 29.8px;
+    height: 30px;
+    border-radius: 50%;
+    border: solid 2px #c85100;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.methods-wrapper select{
+    appearance: none; 
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    width: 279px;
+    padding: 10px;
+    border: solid 1px #424244;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: left;
+    color: rgba(66, 66, 68, 0.6);
+}
+
+
+.displayNone{
+    display: none;
+}
+
+footer{
+    width:100%;
+    background-color: #eae9e9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 40px 74px 10px;
+}
+
+.media-links, .contact-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.media-container, .links-section, .contact-section, .news-section{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer .logo{
+    font-size: 28px;
+    color: #424244;
+}
+
+.plan{
+    font-size: 20px;
+    font-weight: normal;
+    color: #424244;
+}
+
+
+.socmedia{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.socmedia img{
+    width: 32px;
+    height: 32px;
+    filter: invert(24%) sepia(1%) saturate(1677%) hue-rotate(112deg) brightness(92%) contrast(84%);
+}
+
+.links-section a{
+    color: inherit;
+    text-decoration: none ;
+    font-size: 20px;
+    font-weight: normal;
+    color: #424244;
+}
+
+.title-style{
+    font-size: 28px;
+    font-weight: normal;
+    color: #424244;
+}
+
+footer .text-common{
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.email-input{
+    border-radius: 10px;
+    border: solid 1px #424244;
+    padding: 16.5px 13px;
+    font-size: 18px;
+    font-weight: normal;
+    color: #424244;
+    background: url(./images/Paper_Plane.svg) right 13px center/ 34px 34px no-repeat;
+}
+
+
+.email-input::placeholder{
+    color: #424244;
+}
+
+.copyright{
+    font-size: 24px;
+    font-weight: normal;
+    color: #424244;
+    padding: 10px 0 40px;
+}
+
+/* ----------------------------for tablet-------------------- */
+
+
+@media screen and (min-width:800px) {
+    
+
+    
+header{
+    padding: 8px 40px 10px 45px;
+}
+    
+nav{
+    width: 715px;
+}
+    
+.logo{
+    font-size: 28px;
+}
+    
+.nav-links{
+    display: none;
+}
+    
+#menu{
+    width: 40px;
+    height: 40px;
+}
+    
+main{
+    width: 800px;
+    padding: 24px 0 30px ;
+}
+    
+.services{
+    gap: 20px;
+    padding: 0 0 0 40px;
+}
+    
+.serviceBtn{
+    border-radius: 10px;
+    font-size: 28px;
+    letter-spacing: 1.4px;
+}
+    
+    
+.search-section{
+    padding: 0 40px ;
+    gap: 30px;
+    margin-top: 30px;
+}
+          
+.commonDisplay h4{
+    font-size: 18px;
+    letter-spacing: 0.9px;
+}
+      
+.ticket-dir{
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 192px;
+}
+    
+.direct-common{
+    width: 350px;
+    padding: 12px 20px;
+}
+
+    
+#searchBtn{
+    width: 350px;
+    font-size: 24px;
+}
+    
+.filter-offer{
+    gap: 30px;
+    margin: 30px 0;
+}
+    
+.chosenDir{
+    padding: 20px 40px;
+}
+    
+.chosenDir img{
+    width: 33.3pxx;
+    height: 33.3pxpx;
+}
+    
+.chosenInfo{
+    gap: 10px;
+}
+    
+#direction{
+    font-size: 28px;
+}
+
+#dirDate, #dirPerson{
+    font-size: 20px;
+}
+    
+.filterBtn{
+    width: 720px;
+    margin:0 40px;
+    padding: 10px 200px;
+    font-size: 28px;
+}
+    
+.ticket-container{
+    padding: 0 40px;
+    gap: 20px;
+}
+    
+.ticket-card{
+    gap: 16px;
+    padding: 30px 60px;
+}
+    
+.ticketMain{
+    gap: 20px;
+}
+    
+    
+.fly-company img{
+    width: 60px;
+    height: 60px;
+}
+    
+.fly-company span,
+.hourStart, 
+.hourEnd{
+    font-size: 20px;
+}
+    
+.fly-container,
+.fly-time,
+.fly-hour{
+    gap: 20px;
+}
+    
+.fly-landing{
+    gap: 154px;
+}   
+
+.landingCommon{
+    font-size: 24px;
+}
+    
+    
+.line-hour{
+    width: 174px;
+}
+    
+.square{
+    left: 83px;
+}
+    
+.full-time{
+    font-size: 20px;
+    padding-bottom: 16px;
+}
+    
+    
+.dealBtn{
+    width: 600px;
+    font-size: 24px;
+}
+    
+#moreResult{
+    width: 720px;
+    margin: 0 40px;
+    padding: 10px 30px;
+    border-radius: 10px;  
+}
+    
+.filter-section{
+    margin-bottom: 0;
+}
+
+#backArrow{
+    width: 40px;
+    height: 40px;
+    top: 7px;
+    left: 60px;
+}
+    
+.search-parts{
+    width: 720px;
+    margin: 0 40px;
+    padding: 20px 60px;
+    border-radius: 20px;
+}
+    
+.search-line{
+    width: 200px;
+    height: 3px;;
+    margin: 17px 0 20px;
+}
+    
+.search-parts p{
+    font-size: 38px;
+    font-weight: normal;
+    color: #424244;
+}
+    
+.search-items{
+    width: 720px;
+    margin: 30px 40px 0;
+    padding: 20px 60px;
+}
+     
+
+    
+.stop-container span,
+.time-container span,
+.airlines-container span,
+.airports-container span,
+.duration-container span,
+.price-container span,
+.calculator-container span{
+    font-size: 30px;
+
+}
+
+    
+.check-common input{
+    width: 42px;
+    height: 42px;
+}
+    
+.check-common label,
+.takeoff span{
+    font-size: 28px;
+}
+
+    
+.lines{
+    width: 600px;
+    height: 3px;
+}
+ 
+    
+.methods-wrapper select{
+    width: 600px;
+    padding: 10px 35px 10px 20px;
+}
+    
+
+.displayNone{
+    display: none;
+}
+
+
+    
+.footer-container{
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px 40px ;
+}
+
+.media-links, .contact-wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.media-container,
+ .links-section, 
+ .contact-section,
+  .news-section{
+    width: 350px;
+    gap: 20px;
+}
+
+    
+footer .text-common{
+margin: 0;
+}
+    
+.email-input{
+    width: 225px;
+    padding: 16.5px 13px;
+}
+
+
+}
+
+@media screen and (min-width:1920px) {
+    
+
+header{
+    padding: 20px 170px;
+}
+        
+nav{
+    width: 1580px;
+}
+        
+.logo{
+    font-size: 48px;
+}
+        
+.nav-links{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+}
+
+.nav-links a{
+    font-size: 28px;
+    font-weight: normal;
+    letter-spacing: 1.4px;
+    color: #424244;
+    cursor: pointer;
+}
+
+#user{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+#menu{
+display: none;
+}
+   
+main{
+    width: 1920px;
+    padding: 60px 170px 248px ;
+}
+        
+.services{
+    gap: 40px;
+    padding: 0;
+}
+        
+.serviceBtn{
+    border-radius: 20px;
+    font-size: 24px;
+    letter-spacing: 1.2px;
+}
+
+
+        
+.search-section{
+    padding: 0;
+    gap: 20px;
+    margin-top: 60px;
+}
+          
+.commonDisplay h4{
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+          
+.ticket-dir{
+    margin-bottom: 60px;
+}
+        
+.direct-common{
+    width: 430px;
+    padding: 15px 20px;
+    border-radius: 20px;
+}
+
+.direct-common span{
+    font-size: 18px;
+}
+    
+#searchBtn{
+    width: 230px;
+    font-size: 24px;
+    border-radius: 20px;
+}
+
+.section-wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.filter-offer{
+        gap: 30px;
+        margin:0;
+        order: 1;
+}
+        
+.chosenDir{
+    display: none;
+}
+        
+.filterBtn{
+display: none;
+}
+        
+.ticket-container{
+    align-items: center;
+    padding: 0;
+    gap: 20px;
+}
+        
+.ticket-card{
+    width: 1180px;
+    flex-direction: row;
+    gap: 68px;
+    padding: 40px 50px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.ticketMain{
+    gap: 68px;
+}
+
+.fly-company{
+    gap: 10px;
+}
+
+.fly-company img{
+    width: 70px;
+    height: 70px;
+}
+        
+.fly-company span,
+.hourStart, 
+.hourEnd{
+    white-space: nowrap;
+}
+               
+.fly-landing{
+    gap: 166px;
+}   
+      
+.line-hour{
+    width: 180px;
+}
+        
+.full-time{
+    font-size: 24px;
+    padding-bottom: 34px;
+}
+  
+.price-deal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+    
+.line-deal{
+    width: 173px;
+    height: 2px;
+    background-color: rgba(66, 66, 68, 0.6);
+    border: none;
+}
+        
+.dealBtn{
+display: none;
+}
+
+.price{
+    display: none;
+}
+
+.price-box{
+    width: 163px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.pricetext{
+    font-size: 24px;
+    font-weight: 500;
+    color: #424244;
+}
+
+.dealButton{
+    width: 173px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ff8c3e;
+    font-size: 20px;
+    font-weight: 500;
+    color: #424244;
+    cursor: pointer;
+}
+
+#moreResult{
+    width: 1180px;
+    margin: 0;
+    padding: 30px 50px;
+    border-radius: 20px; 
+    font-size: 32px; 
+}
+
+.filter-container{
+    display: none;
+}
+      
+.search-parts{
+    width: 380px;
+    margin: 0 ;
+    padding: 20px 30px;
+}
+
+.search-parts p{
+    font-size: 28px;
+}
+.search-line{
+    width: 129px;
+    height: 2px;;
+    margin: 18px 0 20px;
+}
+        
+        
+.search-items{
+    width: 380px;
+    margin: 40px 0 0;
+    padding: 20px 30px;
+}
+         
+       
+.stop-container span,
+.time-container span,
+.airlines-container span,
+.airports-container span,
+.duration-container span,
+.price-container span,
+.calculator-container span{
+    font-size: 28px;
+}
+    
+.check-common input{
+    width: 30px;
+    height: 30px;
+}
+        
+.check-common label,
+.takeoff span{
+    font-size: 24px;
+}
+    
+.lines{
+    width: 322.5px;
+    height: 2px;
+}
+     
+        
+.methods-wrapper select{
+    width: 264px;
+    padding: 10px 20px;
+}
+        
+    
+    .displayNone{
+        display: none;
+    }
+    
+
+    .footer-container{
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0;
+        padding: 40px 170px 10px;
+    }
+    .media-links{
+        gap: 265px;
+    }
+    
+    .contact-wrapper{
+        flex-direction: column;
+    }
+    
+
+    footer .logo{
+        font-size: 48px;
+    }
+        
+    .plan{
+        font-size: 24px;
+    }
+    
+    .socmedia img{
+        width: 50px;
+        height: 50px;
+    }
+        
+    .links-section a{
+        font-size: 24px;
+    }
+        
+    .title-style{
+        font-size: 32px;
+    }
+        
+    footer .text-common{
+        font-size: 24px;
+    }
+        
+    .email-input{
+        border: solid 1px #424244;
+        padding: 10px 13px;
+    }
+
+    .serviceBtn:hover{
+        background-color: #e7e7e7;
+    }
+
+    .nav-links a:hover{
+        color: #c85100;
+    }
+
+    #user:hover{
+        cursor: pointer;
+        filter: invert(42%) sepia(80%) saturate(2532%) hue-rotate(3deg) brightness(104%) contrast(107%);
+    }
+    
+    #searchBtn:hover,
+    .dealButton:hover,
+    .dealBtn:hover,
+    .filterBtn:hover,
+    #moreResult:hover{
+        background-color: #c85100;
+    }
+
+
+}
+
+
+
+
+
+
+
+

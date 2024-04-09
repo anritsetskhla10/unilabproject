@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing page</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <h1 class="logo">ExploreEra</h1>
+            <img id="menu" src="./images/Hamburger_LG.png" alt="Hamburger_menu">
+            <ul class="links ">
+                <img id="close" src="./images/Close_LG.png" alt="close">
+                <div id="sign">
+                    <a class="sign-in" href="../sign in/index.html">Sign in</a>
+                    <a class="sign-up" href="../sign up/index.html">Sign up</a>
+                    <a class="sign-out" href="./index.html">Sign out</a>
+                    <hr class="line">
+                </div>
+                <li class="menu-link"><a class="nav-links" href="#">Home</a></li>
+                <li class="menu-link"><a class="nav-links" href="#">About us</a></li>
+                <li class="menu-link"><a class="nav-links" href="#">Blogs</a></li>
+                <li class="menu-link"><a class="nav-links" href="../services/index.html">Our services</a></li>
+                <li class="menu-link"><a class="nav-links" href="#">Our offers</a></li>
+                <img id="user" src="./images/User.png" alt="user-icon">
+            </ul>
+        </nav>
+        <div class="header-content">
+            <p class="title">Visit Mountains In
+                <span>ITALY</span>
+           </p>
+           <button class="offer-btn">See offer</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="services-section">
+            <div class="services-description" >
+                <h3 class="service-title">Discover Our Services</h3>
+                <p class="service-description"> ExploreEra provides a one-stop solution for individuals seeking well-planned journeys.
+                     These services include expert advice on destination selection, flight and accommodation bookings,
+                      and customized itineraries to individual preferences.
+                </p>
+            </div>
+
+            <div class="services-section">
+                <span class="see-all">see all</span>
+                <div class="services-wrapper">
+                    <div class="services">
+                        <img class="airplane" src="./images/book-flight.png" alt="airplane">
+                        <h4 class="text-common">Book Flight</h4>
+                        <p class="service-text">
+                            book memorable journey with our flight booking services! we're thrilled 
+                            to present you flight options to suit your travel needs.
+                        </p>
+                    </div>
+                    <div class="services">
+                        <img class="hotel" src="./images/book-hotels.png" alt="hotel">
+                        <h4 class="text-common">Book Hotels</h4>
+                        <p class="service-text"> 
+                            book memorable journey with our flight booking services! we're thrilled 
+                            to present you flight options to suit your travel needs.
+                        </p>
+                    </div>
+                    <div class="services">
+                        <img class="cruise" src="./images/book-cruises.png" alt="cruise">
+                        <h4 class="text-common">Book Cruises</h4>
+                        <p class="service-text">
+                            book memorable journey with our flight booking services! we're thrilled 
+                            to present you flight options to suit your travel needs.
+                        </p>
+                    </div>
+                    <div class="services">
+                        <img class="vacation" src="./images/family-vacation.png" alt="vacation">
+                        <h4 class="text-common">Book family Vacation</h4>
+                        <p class="service-text">
+                            book memorable journey with our flight booking services! we're thrilled 
+                            to present you flight options to suit your travel needs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="watch">
+            <h3 class="video-title"> Watch Our Memorable Trips</h3>
+           <div class="video-container">
+            <video id="videoPlayer" controls poster="./images/video-thumbnail.jpg">
+                <source src="./images/memorable-trip.mp4" type="video/mp4">
+            </video>
+            <div id="vector"></div>
+           </div>
+        </section>
+
+        <section class="offers">
+            <h3 class="tours">Popular Tour Offers</h3>
+            <div id="scroll">
+                <div id="left-arrow"></div>
+                <div id="right-arrow"></div>
+            </div>
+            <div class="cities">
+            </div>
+        </section>
+
+        <section class="blogs">
+            <h3 class="blog-title">Blogs</h3>
+            <div class="blog-wrapper">
+                <div>
+                    <img  src="./images/tibetian.png" alt="Tibet">
+                    <h4 class="blog">Interesting Tibetan Traditions</h4>
+                </div>
+                <div>
+                    <img src="./images/hawaii.png" alt="hawaii">
+                    <h4 class="blog">Are There Volcanos In Hawaii?</h4>
+                </div>
+                <div>
+                    <img src="./images/iceland.png" alt="iceland">
+                    <h4 class="blog">Winter in Iceland</h4>
+                </div>
+                <div>
+                    <img src="./images/tibetian.png" alt="Tibet">
+                    <h4 class="blog">Interesting Tibetan Traditions</h4>
+                </div>
+                <div class="disp-mob">
+                    <img src="./images/hawaii.png" alt="hawaii">
+                    <h4 class="blog">Are There Volcanos In Hawaii?</h4>
+                </div>
+                <div class="disp-mob">
+                    <img src="./images/iceland.png" alt="iceland">
+                    <h4 class="blog">Winter in Iceland</h4>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="book">
+        <h3 class="book-title">Ready To Book A Trip?</h3>
+            <div class="select-container">
+                <select class="select"  name="location" id="location">
+                    <option class="style-selected" value="" disabled selected hidden>Your starting location</option>
+                </select>
+    
+                <select class="select "  name="tour" id="tour-offer">
+                    <option class="style-selected" value="" disabled selected hidden>Choose a tour offer</option>
+                </select>
+    
+                <select class="select "  name="date" id="tour-date">
+                    <option class="style-selected" value="" disabled selected hidden>Choose date</option>
+                </select>
+    
+                <select class="select "  name="" id="person">
+                    <option class="style-selected" value="" disabled selected hidden>Persons</option>
+                </select>
+
+                <button id="book-button">Book Now</button>
+            </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="media-links">
+                <section class="media-container">
+                    <h1 class="logo">ExploreEra</h1>
+                    <p class="plan">Travel agency which helps you to plan your perfect holidays</p>
+                    <span class="title-style">Follow us</span>
+                    <div class="socmedia">
+                        <img src="./images/instagram.svg" alt="instagram logo">
+                        <img src="./images/facebook.svg" alt="facebook logo">
+                        <img src="./images/linkdin.svg" alt="linkdin logo">
+                    </div>
+                </section>
+                <section class="links-section">
+                    <h1 class="title-style">Links</h1>
+                    <a href="#">Home</a>
+                    <a href="#">About us</a>
+                    <a href="#">Blogs</a>
+                    <a href="#">Our services</a>
+                    <a href="#">Our offers</a>
+                </section>
+            </div>
+            <div class="contact-wrapper">
+                <section class="contact-section">
+                    <h1 class="title-style">Contact us</h1>
+                    <p class="text-common">exploreera@gmail.com</p>
+                    <p class="text-common">555111222</p>
+                </section>
+                <section class="news-section">
+                    <h1 class="title-style">Subscribe news</h1>
+                    <input class="email-input" placeholder=" Email" name="email-input">
+                </section>
+            </div>
+        </div>
+        <div class="copyright">Copyright 2024</div>
+    </footer>
+
+</body>
+</html>

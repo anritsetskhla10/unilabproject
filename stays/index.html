@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stays</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <a href="../landing/index.html">
+                <h1 class="logo">ExploreEra</h1>
+            </a>
+    
+            <ul class="nav-links">
+                <li><a href="../landing/index.html">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="../services/index.html">Our services</a></li>
+                <li><a href="#">Our offers</a></li>
+                <img id="user" src="./images/User.svg" alt="user icon">
+            </ul>
+    
+            <img id="menu" src="./images/Hamburger_LG.svg" alt="menu icon">
+        </nav>
+    </header>
+
+
+<main>
+
+    <section class="services " >
+        <a href="../services/index.html" id="flights">
+            <button class="serviceBtn">Flights</button>
+        </a> 
+        <a href="./index.html" id="stays">
+            <button class="serviceBtn serviceBtnClicked">Stays</button>
+        </a> 
+        <a href="#" id="carRental">
+            <button class="serviceBtn" >Car rentals</button>
+        </a> 
+        <a href="#" id="cruises">
+            <button class="serviceBtn" >Cruises</button>
+        </a> 
+        <a href="#" id="attractions">
+            <button class="serviceBtn" >Attractions</button>
+        </a> 
+     </section>
+
+     <section class="search-section ">
+
+        <div class="choose">
+            <div class="content-container">
+                <span>Choose city</span>
+                <img src="./images/Caret_Down_MD.svg" alt="down arrow">
+            </div>
+            <img class="plus" src="./images/Add_Plus.svg" alt="plus icon">
+        </div>
+
+        <div class="calendar-container">
+            <input type="date" id="date" name="date">
+        </div>
+            
+        <div class="person">
+            <div class="content-container">
+                <span>2 Persons</span>
+                <img src="./images/Caret_Down_MD.svg" alt="down arrow">
+            </div>
+            <img class="plus" src="./images/Add_Plus.svg" alt="">
+        </div>
+            <button id="searchBtn">Search</button>
+       
+     </section>
+
+     <section class="browse-section ">
+        <h2 class="browse">Browse by property type</h2>
+
+        <div id="scroll">
+            <div id="left-arrow"></div>
+            <div id="right-arrow"></div>
+        </div>
+        <div class="cards-wrapper">
+        
+        </div>
+
+     </section>
+    
+<section class="section-wrapper displayNone">
+    
+    <section class="filter-section displayNone">
+
+        <div class="sort-container">
+            <p class="searched">Auckland, New Zealand: 2000 properties found</p>
+            <div class="sort">
+                <img class="vector" src="./images/Vector.png" alt="Vector">
+                <span>sort by: popular</span>
+                <img class="arrowicon" src="./images/Chevron_Down.svg" alt="arrow down">
+            </div>
+            <button class="filterBtn">filters</button>
+        </div>
+
+        <div class="hotel-cards-wrapper">
+         
+        </div>
+
+        <button id="showMore">Show more results</button>
+
+    </section>
+
+
+    <section class="morefilter displayNone">
+
+
+        <div class="filter-container">
+            <button class="filterBtn">filters</button>
+            <img id="backArrow" src="./images/Arrow_Right_MD.svg" alt="arrow">
+        </div>
+
+        <div class="filter-parts">
+
+            <div class="filter-title">
+                <h2>Filter by:</h2>
+                <hr class="filter-line">
+            </div>
+
+            <form class="type-wrapper">
+                <h3>Property type</h3>
+                <div class="property-container">
+                    <input type="checkbox" id="hotelCheck" name="hotel" />
+                    <label for="hotelCheck">Hotel</label>
+                </div>
+                <div class="property-container">
+                    <input type="checkbox" id="apartmentCheck" name="apartment" />
+                    <label for="apartmentCheck">Apartment</label>
+                </div>
+                <div class="property-container">
+                    <input type="checkbox" id="villaCheck" name="villa" />
+                    <label for="villaCheck">Villa</label>
+                </div>
+                <div class="property-container">
+                    <input type="checkbox" id="guestCheck" name="guestHouse" />
+                    <label for="guestCheck">Guest house</label>
+                </div>
+                <div class="property-container">
+                    <input type="checkbox" id="resortCheck" name="resort" />
+                    <label for="resortCheck">Resort</label>
+                </div>
+
+                <span class="showAll">Show all 15</span>
+            </form>
+
+            <form class="type-wrapper">
+                <h3>Property rating</h3>
+                <div class="property-container">
+                    <input type="checkbox" id="star5Check" name="fiveStar" />
+                    <label for="star5Check">5 Star</label>
+                </div>
+                <div class="property-container">
+                    <input type="checkbox" id="star4Check" name="fourStar" />
+                    <label for="star4Check">4 Star</label>
+                </div>
+                <div class="property-container">
+                    <input type="checkbox" id="star3Check" name="threeStar" />
+                    <label for="star3Check">3 Star</label>
+                </div>
+                <div class="property-container">
+                    <input type="checkbox" id="star2Check" name="twoStar" />
+                    <label for="star2Check">2 Star</label>
+                </div>
+                <div class="property-container">
+                    <input type="checkbox" id="unratedCheck" name="unrated" />
+                    <label for="unratedCheck">unrated</label>
+                </div>
+            </form>
+            
+            <form class="type-wrapper">
+                <h3>Facilities</h3>
+                <div class="property-container">
+                    <input type="checkbox" id="wifi" name="wifi" />
+                    <label for="wifi">Wifi</label>
+                </div>
+                <div class="property-container">
+                    <input type="checkbox" id="parking" name="parking" />
+                    <label for="parking">Parking</label>
+                </div>
+                <div class="property-container">
+                    <input type="checkbox" id="pets" name="pets" />
+                    <label for="pets">Pets allowed</label>
+                </div>
+                <div class="property-container">
+                    <input type="checkbox" id="fitness" name="fitness" />
+                    <label for="fitness">Fitness center</label>
+                </div>
+                <div class="property-container">
+                    <input type="checkbox" id="pool" name="pool" />
+                    <label for="pool">Swimming pool</label>
+                </div>
+
+                <span class="showAll">Show all 15</span>
+            </form>
+
+            <form class="type-wrapper">
+                <h3>Room facilities</h3>
+                <div class="property-container">
+                    <input type="checkbox" id="balcony" name="balcony" />
+                    <label for="balcony">Balcony</label>
+                </div>
+                <div class="property-container">
+                    <input type="checkbox" id="tv" name="tv" />
+                    <label for="tv">TV</label>
+                </div>
+                <div class="property-container">
+                    <input type="checkbox" id="kitchen" name="kitchen" />
+                    <label for="kitchen">Kitchen</label>
+                </div>
+                <div class="property-container">
+                    <input type="checkbox" id="air" name="air" />
+                    <label for="air">Air conditioning</label>
+                </div>
+                <div class="property-container">
+                    <input type="checkbox" id="washing" name="washing" />
+                    <label for="washing">Washing machine</label>
+                </div>
+
+                <span class="showAll">Show all 15</span>
+            </form>
+
+        </div>
+
+    </section>
+
+
+       
+    </section>
+
+
+
+</main>
+
+
+
+
+<footer  >
+    <div class="footer-container">
+        <div class="media-links">
+            <section class="media-container">
+                <h1 class="logo">ExploreEra</h1>
+                <p class="plan">Travel agency which helps you to plan your perfect holidays</p>
+                <span class="title-style">Follow us</span>
+                <div class="socmedia">
+                    <img src="./images/IG.svg" alt="instagram logo">
+                    <img src="./images/facebook.svg" alt="facebook logo">
+                    <img src="./images/linkdin.svg" alt="linkdin logo">
+                </div>
+            </section>
+            <section class="links-section">
+                <h1 class="title-style">Links</h1>
+                <a href="#">Home</a>
+                <a href="#">About us</a>
+                <a href="#">Blogs</a>
+                <a href="#">Our services</a>
+                <a href="#">Our offers</a>
+            </section>
+        </div>
+        <div class="contact-wrapper">
+            <section class="contact-section">
+                <h1 class="title-style">Contact us</h1>
+                <p class="text-common">exploreera@gmail.com</p>
+                <p class="text-common">555111222</p>
+            </section>
+            <section class="news-section">
+                <h1 class="title-style">Subscribe news</h1>
+                <input id="email-sub" class="email-input"  placeholder=" Email" autocomplete="email">
+            </section>
+        </div>
+    </div>
+    <div class="copyright">Copyright 2024</div>
+</footer>
+
+
+
+
+    
+</body>
+</html>

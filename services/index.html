@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>services</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+
+</head>
+<body>
+    
+
+<header>
+    <nav>
+        <a href="../landing/index.html">
+            <h1 class="logo">ExploreEra</h1>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="../landing/index.html">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="./index.html">Our services</a></li>
+            <li><a href="#">Our offers</a></li>
+            <img id="user" src="./images/User.svg" alt="user icon">
+        </ul>
+
+        <img id="menu" src="./images/Hamburger_LG.svg" alt="menu icon">
+    </nav>
+</header>
+
+<main>
+
+    <section class="services " >
+       <a href="./index.html" id="flights">
+           <button class="serviceBtn serviceBtnClicked">Flights</button>
+       </a> 
+       <a href="../stays/index.html" id="stays">
+           <button class="serviceBtn">Stays</button>
+       </a> 
+       <a href="#" id="carRental">
+           <button class="serviceBtn" >Car rentals</button>
+       </a> 
+       <a href="#" id="cruises">
+           <button class="serviceBtn" >Cruises</button>
+       </a> 
+       <a href="#" id="attractions">
+           <button class="serviceBtn" >Attractions</button>
+       </a> 
+    </section>
+    
+    <section class="search-section " >
+        <div class="ticket-info">
+            <div class="commonDisplay">
+                <h4>One-way</h4>
+                <img src="./images/Chevron_Down.svg" alt="">
+            </div>
+            <div class="commonDisplay">
+                <h4>1 Adult</h4>
+                <img src="./images/Chevron_Down.svg" alt="">
+            </div>
+            <div class="commonDisplay">
+                <h4>Economy</h4>
+                <img src="./images/Chevron_Down.svg" alt="">
+            </div>
+        </div>
+
+        <div class="ticket-dir">
+            <div class="direct-common">
+                <div class="directFrom">
+                    <span>From</span>
+                    <h5>Tbilisi</h5>
+                    <img  src="./images/Close_SM.svg" alt="close icon">
+                </div>
+                <img  class="plus-icon"  src="./images/Add_Plus.svg" alt="plus icon">
+            </div>
+            <div class="direct-common">
+                <div class="directTo">
+                    <span>to</span>
+                    <h5>Paris</h5>
+                    <img src="./images/Caret_Down_MD.svg" alt="close icon">
+                </div>
+                <img  class="plus-icon" src="./images/Add_Plus.svg" alt="plus icon">
+            </div>
+            <div class="direct-common">
+                <div class="directDate">
+                    <img src="./images/Calendar_Days.svg" alt="calendar icon">
+                    <h5>Calendar</h5>
+                    <img src="./images/Close_SM.svg" alt="close icon">
+                </div>
+                <img class="plus-icon"  src="./images/Add_Plus.svg" alt="plus icon">
+            </div>
+
+            <button id="searchBtn">Search</button>
+        </div>
+    </section>
+
+    <section class="section-wrapper displayNone">
+        <section class="filter-offer displayNone" > 
+            <div class="chosenDir">
+                <div class="chosenInfo">
+                    <div>
+                        <span id="direction">Tbilisi-Paris</span>
+                    </div>
+                    <div class="date-person">
+                        <span id="dirDate">20.02.2024</span>
+                        <span id="dirPerson">2 adults</span>
+                    </div>
+                </div>
+                    <img src="./images/pencil.svg" alt="pencil icon">
+            </div>
+            <button class="filterBtn">filters</button>
+            <div class="ticket-container">
+               
+            </div>  
+            <button id="moreResult">Show more results</button>  
+        </section>
+    
+        <section class="filter-section displayNone" > 
+    
+            <div class="filter-container">
+                <button class="filterBtn">filters</button>
+                <img id="backArrow" src="./images/Arrow_Right_MD.svg" alt="arrow">
+            </div>
+    
+            <div class="search-parts">
+                <p>Cheapest</p>
+                <hr class="search-line">
+                <p>Quickest</p>
+                <hr class="search-line">
+                <p>best</p>
+            </div>
+    
+            <div class="search-items">
+                <div class="stop-wrapper">
+                    <div class="stop-container">
+                        <span>Stops</span>
+                        <img id="stopArrow" src="./images/Chevron_Down.svg" alt="arrow">
+                    </div>
+                    <form class="check-wrapper">
+                        <div class="check-common">
+                            <input type="checkbox" id="direct" name="stop" />
+                            <label for="direct">Direct</label>
+                        </div>
+                        <div class="check-common">
+                            <input type="checkbox" id="onestop" name="stop" />
+                            <label for="onestop">One stop</label>
+                        </div>
+                        <div class="check-common">
+                            <input type="checkbox" id="twostop" name="stop" />
+                            <label for="twostop">Two stop</label>
+                        </div>  
+                    </form>
+                </div>
+    
+                <div class="times-wrapper">
+                    <div class="time-container">
+                        <span>Times</span>
+                        <img id="timeArrow" src="./images/Chevron_Down.svg" alt="arrow">
+                    </div>
+                    <div class="takeoff-wrapper">
+                        <div class="takeoff">
+                            <span>Take off - Tbilisi</span>
+                            <div class="takeoff-time">
+                                <span>12:00</span>
+                                  <span>24:00</span>
+                            </div>
+                            <div class="line-wrapper">
+                                <div class="circle-right"></div>
+                                <hr class="lines">
+                                <div class="circle-left"></div>
+                            </div>
+                        </div>
+                        <div class="takeoff">
+                                <span>Take off - Paris</span>
+                                <div class="takeoff-time">
+                                    <span>12:00</span>
+                                      <span>24:00</span>
+                                </div>
+                                <div class="line-wrapper">
+                                    <div class="circle-right"></div>
+                                    <hr class="lines">
+                                    <div class="circle-left"></div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+    
+                <div class="airlines-container">
+                    <span>Airlines</span>
+                    <img id="airlinesArrow" src="./images/Chevron_Down.svg" alt="arrow">
+                </div>
+    
+                <div class="airports-container">
+                    <span>Airports</span>
+                    <img id="airportsArrow" src="./images/Chevron_Down.svg" alt="arrow">
+                </div>
+    
+                <div class="duration-wrapper">
+                    <div class="duration-container">
+                        <span>Duration</span>
+                        <img id="durationArrow" src="./images/Chevron_Down.svg" alt="arrow">
+                    </div>
+                    <div class="duration-line">
+                        <div class="duration">
+                            <span>7 Hours</span>
+                            <span>30 Hours</span>
+                        </div>
+                        <div class="line-wrapper">
+                            <div class="circle-right"></div>
+                            <hr class="lines">
+                            <div class="circle-left"></div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="price-wrapper">
+                    <div class="price-container">
+                        <span>Price</span>
+                        <img id="priceArrow" src="./images/Chevron_Down.svg" alt="arrow">
+                    </div>
+                    <div class="prices">
+                        <div class="price-amount">
+                            <span>700$</span>
+                            <span>3000$</span>
+                        </div>
+                        <div class="line-wrapper">
+                            <div class="circle-right"></div>
+                            <hr class="lines">
+                            <div class="circle-left"></div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="calculator-wrapper">
+                    <div class="calculator-container">
+                        <span>Price Calculator</span>
+                        <img id="calculatorArrow" src="./images/Chevron_Down.svg" alt="arrow">
+                    </div>
+                    <div class="methods-wrapper">
+                        <div class="creditCard-container">
+                            <div class="payment-method">
+                                <img src="./images/Credit_Card_01.svg" alt="credit card icon">
+                                <span>Payment method</span>
+                            </div>
+                            <select name="Payment method" id="payment">
+                                <option value="Payment method">Choose payment method</option>
+                            </select>
+                        </div>
+                        <div class="handbag-container">
+                            <div class="bags-container">
+                                <img src="./images/Handbag.svg" alt="handbag icon">
+                                <span>Carry-on bag</span>
+                            </div>
+                            <select name="Select-bags" id="select-bag">
+                                <option value="Select bags">Select bags (0)</option>
+                            </select>
+                        </div>
+                        <div class="suitcase-container">
+                            <div class="checked-bags">
+                                <img src="./images/Credit_Card_01.svg" alt="credit card icon">
+                                <span>Checked bag</span>
+                            </div>
+                            <select name="Checked-bag" id="checked-bag">
+                                <option value="Select bags">Select bags (0)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+</main>
+
+
+
+<footer  >
+    <div class="footer-container">
+        <div class="media-links">
+            <section class="media-container">
+                <h1 class="logo">ExploreEra</h1>
+                <p class="plan">Travel agency which helps you to plan your perfect holidays</p>
+                <span class="title-style">Follow us</span>
+                <div class="socmedia">
+                    <img src="./images/IG.svg" alt="instagram logo">
+                    <img src="./images/facebook.svg" alt="facebook logo">
+                    <img src="./images/linkdin.svg" alt="linkdin logo">
+                </div>
+            </section>
+            <section class="links-section">
+                <h1 class="title-style">Links</h1>
+                <a href="#">Home</a>
+                <a href="#">About us</a>
+                <a href="#">Blogs</a>
+                <a href="#">Our services</a>
+                <a href="#">Our offers</a>
+            </section>
+        </div>
+        <div class="contact-wrapper">
+            <section class="contact-section">
+                <h1 class="title-style">Contact us</h1>
+                <p class="text-common">exploreera@gmail.com</p>
+                <p class="text-common">555111222</p>
+            </section>
+            <section class="news-section">
+                <h1 class="title-style">Subscribe news</h1>
+                <input id="email-sub" class="email-input"  placeholder=" Email" autocomplete="email">
+            </section>
+        </div>
+    </div>
+    <div class="copyright">Copyright 2024</div>
+</footer>
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
